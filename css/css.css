@@ -1,0 +1,85 @@
+body {
+    font-family: Calibri;
+    font-size: 14px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'docs docs'
+        'adults infants'
+        'out-of-turn out-of-turn';
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+#docs {
+    grid-area: docs;
+    background-color: rgb(250, 250, 240);
+    justify-content: center;
+    border: black 1px solid;
+}
+#adults {
+    grid-area: adults;
+    background-color: #f8f8ff;
+    border: black 1px solid;
+}
+#infants {
+    grid-area: infants;
+    background-color: #f8f8f8;
+    border: black 1px solid;
+}
+#out-of-turn {
+    grid-area: out-of-turn;
+    background-color: rgb(250, 250, 240);
+    border: black 1px solid;
+}
+abbr {
+    cursor: help;
+}
+table {
+    width: 100%;
+    padding: 5px;
+}
+thead {
+    background-color: #616161;
+    color: white;
+    text-align: center;
+}
+.op-quote {
+    color: blue;
+}
+.head-table {
+    background-color: #c0c0c0;
+    text-align: center;
+    width: 50%;
+}
+.under-head-table {
+    background-color: #f6ffe0;
+    text-align: center;
+    width: 1fr;
+}
+/*[data-tooltip] {
+    cursor: help;
+}
+[data-tooltip]:hover::after {
+    opacity: 1;
+}
+[data-tooltip]::after {
+    pointer-events: none;
+    content: attr(data-tooltip);
+    background-color: rgb(60, 60, 60);
+    border-radius: 10px 10px 10px 0px;
+    padding: 7px 7px 7px 7px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+    color: white;
+    position: relative; bottom: 20px; left: 5px;
+    box-shadow: 3px 3px 3px 0px #505050;
+}*/
+#adult-docs {
+    text-align: center;
+}
+.indent {
+    margin-left: 20px;
+    font-size: small;
+}
